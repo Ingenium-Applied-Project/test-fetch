@@ -18,7 +18,7 @@ const APP = {
     const authString = `${username}:${password}`;
     fetch(url, {
       method: "GET",
-      // mode: "no-cors",
+      mode: "no-cors",
       headers: {
         Authorization: `Basic ${btoa(`${authString}`)}`,
         "Content-Type": "application/json",
